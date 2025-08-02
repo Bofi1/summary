@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="dashboard who manage your daily healthy score"
+      content="A dashboard to track and analyze your daily health score."
     />
+
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
@@ -37,9 +38,14 @@
         </div>
       </div>
 
-      <main class="w-full flex justify-center items-center px-10 md:w-[380px]">
+      <main
+        class="w-full flex justify-center items-center px-10 md:w-[380px]"
+        aria-labelledby="summary-title"
+      >
         <div class="w-full">
-          <h2 class="font-semibold text-2xl my-6 md:mt-10">Summary</h2>
+          <h2 class="font-semibold text-2xl my-6 md:mt-10" id="summary-title">
+            Summary
+          </h2>
 
           <div class="flex w-full bg-[#FEF7F7] py-3 px-5 rounded-lg mb-6">
             <img
@@ -59,7 +65,7 @@
             <img
               class="mr-4 font-semibold"
               src="images/icon-memory.svg"
-              alt="icon-reaction"
+              alt="icon-memory"
             />
             <div class="w-full flex justify-between">
               <span class="text-[#E3C66C] font-semibold">Memory</span>
@@ -73,7 +79,7 @@
             <img
               class="mr-4 font-semibold"
               src="images/icon-verbal.svg"
-              alt="icon-reaction"
+              alt="icon-verbal"
             />
             <div class="w-full flex justify-between">
               <span class="text-[#4EBCA1] font-semibold">Verbal</span>
@@ -87,7 +93,7 @@
             <img
               class="mr-4 font-semibold"
               src="images/icon-visual.svg"
-              alt="icon-reaction"
+              alt="icon-visual"
             />
             <div class="w-full flex justify-between">
               <span class="text-[#4B4FAB] font-semibold">Visual</span>
@@ -97,11 +103,12 @@
             </div>
           </div>
 
-          <div
+          <button
             class="flex w-full bg-[#303B59] py-3 px-5 rounded-3xl mb-6 md:mb-12 justify-center font-semibold text-white active:bg-[#20283d] active:scale-95 cursor-pointer hover:bg-[#26304a]"
+            type="button"
           >
             Continue
-          </div>
+          </button>
         </div>
       </main>
     </article>
